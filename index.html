@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Frontend Mentor</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="./css/style.min.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/b69fb5b7db.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b69fb5b7db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="card-back">
+        <div class="inner-card">
+            <div class="big-elipse"></div>
+        </div>
+        <div class="uno">UNO</div>
+    </div>
+
+    <div class="card-special">
+        <div class="inner-card">
+            <div class="big-elipse"></div>
+            <div class="small-elipse-1">
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+            </div>
+            <div class="small-elipse-2">
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-special">
+        <div class="inner-card">
+            <div class="big-elipse">
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+            </div>
+            <div class="small-elipse-1">
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+            </div>
+            <div class="small-elipse-2">
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-draw4">
+        <div class="inner-card">
+            <div class="big-elipse"></div>
+            <div class="draw4" style="--top:0; --left:0">+4</div>
+            <div class="draw4" style="--bottom:0; --right:0; --rot:180deg">+4</div>
+            <div class="small-card" style="--x: 0% ; --y: -40% ; --z: 3 ; --clr: rgba(196, 12, 0, 1) ;"></div>
+            <div class="small-card" style="--x: 70% ; --y: -100% ; --z: 2 ; --clr: rgba(231, 208, 4, 1) ;"></div>
+            <div class="small-card" style="--x: -70% ; --y: -60% ; --z: 1 ; --clr: rgba(18, 84, 171, 1) ;"></div>
+            <div class="small-card" style="--x: -140% ; --y: 0 ; --z: 0 ; --clr: rgba(50, 138, 16, 1) ;"></div>
+        </div>
+    </div>
+
+    <div class="card-draw2">
+        <div class="inner-card">
+            <div class="big-elipse"></div>
+            <div class="draw4" style="--top:0; --left:0">+2</div>
+            <div class="draw4" style="--bottom:0; --right:0; --rot:180deg">+2</div>
+            <div class="small-card" style="--x: -20% ; --y: -80% ; --z: 1 ; --clr: rgba(216 , 216, 218, 1) ;"></div>
+            <div class="small-card" style="--x: -80% ; --y: -20% ; --z: 2 ; --clr: rgba(216 , 216, 218, 1) ;"></div>
+        </div>
+    </div>
+
+    <div class="hero-card">
+        <div class="inner-card">
+            <div class="hero" style="--x:0 ; --y:-20% ; --scl: 1">
+                <img src="./image/Mage.jpg" alt="">
+            </div>
+            <div class="big-elipse" style="--clr:invert(rgb(7,233,217)); --bg-clr :rgba(18, 84, 171, 1) ; --grd :linear-gradient(-45deg,rgb(7,233,217),rgba(18, 84, 171, 1))">
+                <div class="name">mage</div>
+                <div class="effect" style="--line-height:2;">Oynanan herhangi bir Özel kartı tekrarlayabilir</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-card">
+        <div class="inner-card">
+            <div class="hero" style="--x:0 ; --y:0 ; --scl: 1.2">
+                <img src="./image/rogue.jpg" alt="">
+            </div>
+            <div class="big-elipse" style="--clr:complement(rgb(246,255,179)) ; --bg-clr :rgba(50, 138, 16, 1) ;--grd :linear-gradient(-45deg,rgb(246,255,179),rgba(50, 138, 16, 1))">
+                <div class="name">rogue</div>
+                <div class="effect" style="--line-height:1.6;">Elinde istediği Renkteki Tüm kartları, istediği bir rakibine verir.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-card">
+        <div class="inner-card">
+            <div class="hero" style="--x:-33% ; --y:60% ; --scl:3">
+                <img src="./image/priest.jpg" alt="">
+            </div>
+            <div class="big-elipse" style="--clr:invert(rgb(88,87,70)); --bg-clr :rgba(231, 208, 4, 1) ;--grd :linear-gradient(-45deg,rgb(88,87,70),rgba(231, 208, 4, 1))">
+                <div class="name">priest</div>
+                <div class="effect" style="--line-height:1;">Bir oyuncu oyunu bitirdiği zaman Engel olur. Rakip en yüksek kart sayısına sahip oyuncunun kartları kadar kart çeker.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-card">
+        <div class="inner-card">
+            <div class="hero" style="--x:-0% ; --y:5% ; --scl:1.1">
+                <img src="./image/hunter.jpg" alt="">
+            </div>
+            <div class="big-elipse" style="--clr:invert(rgb(128,255,0)); --bg-clr :rgba(196, 12, 0, 1) ; --grd :linear-gradient(-45deg,rgb(128,255,0),rgba(196, 12, 0, 1))">
+                <div class="name">hunter</div>
+                <div class="effect" style="--line-height:1.6;">Bir rakip Özel kart kullandığı zaman, o kartı ona karşı kullandırır.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-special">
+        <div class="inner-card">
+            <div class="big-elipse">
+                <div class="effect">Rakibin Sarı çekene kadar kart çeker. Çektiği sarı kartı gösterir</div>
+            </div>
+            <div class="small-elipse-1">
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+            </div>
+            <div class="small-elipse-2">
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-special">
+        <div class="inner-card">
+            <div class="big-elipse">
+                <div class="effect">Rakibin Özel kart çekene kadar kart çeker. Çektiği Özel kartı gösterir.</div>
+            </div>
+            <div class="small-elipse-1">
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+            </div>
+            <div class="small-elipse-2">
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-special">
+        <div class="inner-card">
+            <div class="big-elipse">
+                <div class="effect">İki oyuncu da elindeki en yüksek sayıyı gösterir. Sayısı küçük olan 3 kart çeker.</div>
+            </div>
+            <div class="small-elipse-1">
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+            </div>
+            <div class="small-elipse-2">
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-special">
+        <div class="inner-card">
+            <div class="big-elipse">
+                <div class="effect">Rakip 3 kart çeker. Rakibin elinde tek kart varsa 7 kart çeker.</div>
+            </div>
+            <div class="small-elipse-1">
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+            </div>
+            <div class="small-elipse-2">
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-special">
+        <div class="inner-card">
+            <div class="big-elipse">
+                <div class="effect">Rakibin elindeki 3 karta bak. Bakcağın kartları rakip kendi seçer.</div>
+            </div>
+            <div class="small-elipse-1">
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+            </div>
+            <div class="small-elipse-2">
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-special">
+        <div class="inner-card">
+            <div class="big-elipse">
+                <div class="effect">Rakibin özel kartlarından birini al. Rakip kendi seçer.</div>
+            </div>
+            <div class="small-elipse-1">
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+            </div>
+            <div class="small-elipse-2">
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-special">
+        <div class="inner-card">
+            <div class="big-elipse">
+                <div class="effect">Rakibin sana kart çektirmesini etkisizleştir.</div>
+            </div>
+            <div class="small-elipse-1">
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+            </div>
+            <div class="small-elipse-2">
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-special">
+        <div class="inner-card">
+            <div class="big-elipse">
+                <div class="effect">Rakibin sana karşı kullandığı özel gücü etkisizleştir.</div>
+            </div>
+            <div class="small-elipse-1">
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+            </div>
+            <div class="small-elipse-2">
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-special">
+        <div class="inner-card">
+            <div class="big-elipse">
+                <div class="effect">İstediğin bir kart daha atabilirsin. Aynı sayının farklı rengini atarsan bir kart daha atabilirsin</div>
+            </div>
+            <div class="small-elipse-1">
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+            </div>
+            <div class="small-elipse-2">
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-special">
+        <div class="inner-card">
+            <div class="big-elipse">
+                <div class="effect">Elindeki istediğin renkteki kartların hepsini at, Renk seç.</div>
+            </div>
+            <div class="small-elipse-1">
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+            </div>
+            <div class="small-elipse-2">
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-special">
+        <div class="inner-card">
+            <div class="big-elipse">
+                <div class="effect">Rakibe elindeki seçtiğin bir renkteki kartların hepsini ver. Rakiten seçtiğin bir renkteki kartların hepsini al.</div>
+            </div>
+            <div class="small-elipse-1">
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+            </div>
+            <div class="small-elipse-2">
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-special">
+        <div class="inner-card">
+            <div class="big-elipse">
+                <div class="effect">Rakibin tüm oyun boyunca kartları açık oynamak zorunda.</div>
+            </div>
+            <div class="small-elipse-1">
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+            </div>
+            <div class="small-elipse-2">
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-special">
+        <div class="inner-card">
+            <div class="big-elipse">
+                <div class="effect">Rakibin Özel kart çekene kadar kart çeker. Çektiği Özel kartı gösterir.</div>
+            </div>
+            <div class="small-elipse-1">
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+            </div>
+            <div class="small-elipse-2">
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-special">
+        <div class="inner-card">
+            <div class="big-elipse">
+                <div class="effect">Rakibin elindeki bir kartın ne olduğunu tahmin et(Rengini ya da Özel olup olmadığını).Doğruysa kartı al, tüm kartlarını ona ver. Yanlışsa 3 kart çek.</div>
+            </div>
+            <div class="small-elipse-1">
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+            </div>
+            <div class="small-elipse-2">
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-special">
+        <div class="inner-card">
+            <div class="big-elipse">
+                <div class="effect">Yere atılmış kartlardan istediğin birini alabilirsin</div>
+            </div>
+            <div class="small-elipse-1">
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+            </div>
+            <div class="small-elipse-2">
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-special">
+        <div class="inner-card">
+            <div class="big-elipse">
+                <div class="effect">Rakibin Özel kart çekene kadar kart çeker. Çektiği Özel kartı gösterir.</div>
+            </div>
+            <div class="small-elipse-1">
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+            </div>
+            <div class="small-elipse-2">
+                <div class="box" style="--bg-clr:rgba(18, 84, 171, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(50, 138, 16, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(196, 12, 0, 1);"></div>
+                <div class="box" style="--bg-clr:rgba(231, 208, 4, 1);"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+@mixin general ($clr,$bg-clr,$ff,$fs,$fw,$txt-algn) {
+    
+    color : $clr;
+    background: $bg-clr;
+    font : {
+        family : $ff ;
+        size : $fs;
+        weight : $fw;
+    }
+    text : {
+        align : $txt-algn; 
+    }
+}
+
+@mixin font ($clr,$ff,$fs,$fw) {
+    color : $clr;
+    font : {
+        family : $ff;
+        size : $fs;
+        weight : $fw;
+    }
+}

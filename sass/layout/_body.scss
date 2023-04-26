@@ -1,0 +1,303 @@
+body {
+    padding: 1rem;
+    background-color: black;
+    width: 20.9cm;
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 340px;
+    
+    .card-back {
+        @include card ;
+        position: relative;
+
+        .inner-card {
+            @include inner-card ($clr-6) ;
+            overflow: hidden;
+
+            .big-elipse {
+                @include elipse (145%, $clr-7) ;
+            }
+        }
+
+        .uno {
+            @include color($clr-8, unset) ;
+            @include font (sans-serif, 4.6rem, 900) ;
+            width: min-content;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-48%,-50%) rotateZ(-20deg);
+
+            letter-spacing: 0.0001px;
+            text-shadow: 1px 1px 1px $clr-9 ,
+                        -1px -1px 1px $clr-9 ,
+                        -10px 0px 1px $clr-6 ,
+                        -10px 6px 1px $clr-6 ,
+                        -12px 8px 1px $clr-9 ,
+                        -10px -2px 1px $clr-9;
+            
+        }
+    }   
+
+    .card-special {
+        @include card ;
+
+        .inner-card {
+            @include inner-card ($clr-6) ;
+            position: relative;
+            overflow: hidden;
+
+            .big-elipse {
+                @include elipse ($wdt-big-elipse, $clr-9) ;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(2,1fr);
+
+                overflow: hidden;
+                border: 4px solid $clr-5;
+                .box {
+                    background-color: var(--bg-clr) ;
+                }
+                .effect {
+                    grid-column: 1/-1;
+                    grid-row: 1/-1;
+                    justify-self: center;
+                    align-self: center;
+                    text-align: center;
+                }
+            }
+            .small-elipse-1 {
+                @include elipse (40%,$clr-5) ;
+                position: absolute;
+                top: 2%;
+                left: 10%;
+
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(2,1fr);
+
+                overflow: hidden;
+                border: 4px solid $clr-5;
+
+                .box {
+                    background-color: var(--bg-clr) ;
+                }
+            }
+            .small-elipse-2 {
+                @include elipse (40%,$clr-5) ;
+                position: absolute;
+                bottom: 15%;
+                right: -5%;
+
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(2,1fr);
+
+                overflow: hidden;
+                border: 4px solid $clr-5;
+
+
+                .box {
+                    background-color: var(--bg-clr) ;
+                }
+            }
+        }
+    }   
+
+    .card-draw4 {
+        @include card ;
+
+        .inner-card {
+            @include inner-card ($clr-6) ;
+            overflow: hidden;
+
+            position: relative;
+
+            .small-card {
+                width: 40px;
+                aspect-ratio: 9/16 ;
+                background-color: var(--clr);
+                border-radius: 0.4rem;
+
+                position: absolute;
+                top: 50%; left:50%;
+                transform: translate(var(--x),var(--y)) ;
+                z-index: var(--z);
+
+                box-shadow: 0 0 0px 2px black,
+                0 2px 0px 2px black,
+                -8px 5px 0px 2px black;
+
+                &::before {
+                    content: "";
+                    height: 100%;
+                    width: 20%;
+                    background-color: black;
+                    position: absolute;
+                    transform: translate(-100%,0) skewy(-45deg);
+                    transform-origin: bottom right;
+                    border-top-left-radius: 0.4rem;
+                    border-bottom-left-radius: 0.4rem;   
+                }
+                &::after {
+                    content: "";
+                    height: 10%;
+                    width: 100%;
+                    background-color: black;
+                    position: absolute;
+                    bottom:0 ;
+                    transform: translate(0%,100%) skewx(-45deg);
+                    transform-origin: top left;
+                    border-bottom-right-radius: 0.4rem;
+                    border-bottom-left-radius: 0.4rem;   
+                }
+            }
+
+            .big-elipse {
+                @include elipse (145%, $clr-5) ;
+            }
+            .draw4 {
+                @include color($clr-5,unset) ;
+                @include font(Arial, 2.8rem , 900) ;
+                position: absolute;
+                top: var(--top) ;
+                left: var(--left) ;
+                bottom: var(--bottom) ;
+                right: var(--right);
+                transform: rotateZ(var(--rot));
+                padding-inline-start: 0.6rem;
+                text-shadow: 
+                3px 3px 1px $clr-6,
+                -3px 3px 1px $clr-6,
+                -3px -3px 1px $clr-6,
+                3px -3px 1px $clr-6,
+                -3px 0px 1px $clr-6,-3px 0px 2px $clr-6,-3px 0px 3px $clr-6,-3px 0px 4px $clr-6,-3px 0px 5px $clr-6,
+                4px 4px 1px $clr-5,
+                -4px 4px 1px $clr-5,
+                -4px -4px 1px $clr-5,
+                4px -4px 1px $clr-5,
+                -4px 0px 1px $clr-5,-4px 0px 2px $clr-5,-4px 0px 4px $clr-5,-4px 0px 4px $clr-5,-4px 0px 5px $clr-5;
+            }
+        }    
+    }
+
+    .card-draw2 {
+        @include card ;
+
+        .inner-card {
+            @include inner-card ($clr-4) ;
+            overflow: hidden;
+
+            position: relative;
+
+            .small-card {
+                width: 40px;
+                aspect-ratio: 9/16 ;
+                background-color: var(--clr);
+                border-radius: 0.4rem;
+
+                position: absolute;
+                top: 50%; left:50%;
+                transform: translate(var(--x),var(--y)) ;
+                z-index: var(--z);
+
+                box-shadow: 0 0 0px 2px black,
+                0 2px 0px 2px black,
+                -8px 5px 0px 2px black;
+
+                &::before {
+                    content: "";
+                    height: 100%;
+                    width: 20%;
+                    background-color: black;
+                    position: absolute;
+                    transform: translate(-100%,0) skewy(-45deg);
+                    transform-origin: bottom right;
+                    border-top-left-radius: 0.4rem;
+                    border-bottom-left-radius: 0.4rem;   
+                }
+                &::after {
+                    content: "";
+                    height: 10%;
+                    width: 100%;
+                    background-color: black;
+                    position: absolute;
+                    bottom:0 ;
+                    transform: translate(0%,100%) skewx(-45deg);
+                    transform-origin: top left;
+                    border-bottom-right-radius: 0.4rem;
+                    border-bottom-left-radius: 0.4rem;   
+                }
+            }
+
+            .big-elipse {
+                @include elipse (145%, $clr-5) ;
+            }
+            .draw4 {
+                @include color($clr-5,unset) ;
+                @include font(Arial, 2.8rem , 900) ;
+                position: absolute;
+                top: var(--top) ;
+                left: var(--left) ;
+                bottom: var(--bottom) ;
+                right: var(--right);
+                transform: rotateZ(var(--rot));
+                padding-inline-start: 0.6rem;
+                text-shadow: 
+                3px 3px 1px $clr-6,
+                -3px 3px 1px $clr-6,
+                -3px -3px 1px $clr-6,
+                3px -3px 1px $clr-6,
+                -3px 0px 1px $clr-6,-3px 0px 2px $clr-6,-3px 0px 3px $clr-6,-3px 0px 4px $clr-6,-3px 0px 5px $clr-6,
+                4px 4px 1px $clr-5,
+                -4px 4px 1px $clr-5,
+                -4px -4px 1px $clr-5,
+                4px -4px 1px $clr-5,
+                -4px 0px 1px $clr-5,-4px 0px 2px $clr-5,-4px 0px 4px $clr-5,-4px 0px 4px $clr-5,-4px 0px 5px $clr-5;
+            }
+        }    
+    }
+
+    .hero-card {
+        @include card ;
+
+        .inner-card {
+            @include inner-card ($clr-4) ;
+            overflow: hidden;
+
+            position: relative;
+
+            .hero {
+                position: absolute;
+                transform: translate(var(--x),var(--y)) scale(var(--scl)) ;
+            }
+            .big-elipse {
+                @include elipse (145%, $clr-5) ;
+                @include color (var(--clr) , var(--bg-clr) ) ;
+                background-image: var(--grd);
+                transform: rotateZ(0deg) translate(-15%,122%);
+
+                display: grid;
+                grid-template-rows: 2rem 1fr;
+                place-items: center;
+
+                overflow: hidden;
+
+                .name {
+                    @include font('Delicious Handrawn', 1.4rem , 900) ;
+                    font-variant: small-caps;
+                }
+                .effect {
+                    padding-inline: 1.9rem;
+                    line-height: var(--line-height);
+                    text-align: center;
+                    align-self: self-start;
+                    padding-inline: 3rem;
+                    font-weight: 500;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+            }
+        }    
+    }
+}

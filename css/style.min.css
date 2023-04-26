@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list],
+ul,
+ol,
+dl {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img, picture {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Make images easier to work with */
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.fs-1 {
+  font-size: 1rem;
+}
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.fs-3 {
+  font-size: 3rem;
+}
+
+.fs-4 {
+  font-size: 4rem;
+}
+
+.fs-1 {
+  font-size: 1rem;
+}
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.fs-3 {
+  font-size: 3rem;
+}
+
+.fs-4 {
+  font-size: 4rem;
+}
+
+body {
+  padding: 1rem;
+  background-color: black;
+  width: 20.9cm;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 340px;
+}
+body .card-back {
+  width: 5.5cm;
+  height: 8.6cm;
+  color: unset;
+  background-color: rgb(255, 253, 255);
+  padding: 0.6rem;
+  border-radius: 1rem;
+  position: relative;
+}
+body .card-back .inner-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.4rem;
+  background-color: rgb(21, 18, 25);
+  overflow: hidden;
+}
+body .card-back .inner-card .big-elipse {
+  width: 145%;
+  aspect-ratio: 1.9;
+  border-radius: 50%;
+  transform: rotateZ(-55deg) translate(-35%, 10%);
+  color: unset;
+  background-color: rgb(186, 30, 39);
+}
+body .card-back .uno {
+  color: rgb(214, 215, 69);
+  background-color: unset;
+  font-family: sans-serif;
+  font-size: 4.6rem;
+  font-weight: 900;
+  width: min-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-48%, -50%) rotateZ(-20deg);
+  letter-spacing: 0.0001px;
+  text-shadow: 1px 1px 1px rgb(255, 253, 255), -1px -1px 1px rgb(255, 253, 255), -10px 0px 1px rgb(21, 18, 25), -10px 6px 1px rgb(21, 18, 25), -12px 8px 1px rgb(255, 253, 255), -10px -2px 1px rgb(255, 253, 255);
+}
+body .card-special {
+  width: 5.5cm;
+  height: 8.6cm;
+  color: unset;
+  background-color: rgb(255, 253, 255);
+  padding: 0.6rem;
+  border-radius: 1rem;
+}
+body .card-special .inner-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.4rem;
+  background-color: rgb(21, 18, 25);
+  position: relative;
+  overflow: hidden;
+}
+body .card-special .inner-card .big-elipse {
+  width: 145%;
+  aspect-ratio: 1.9;
+  border-radius: 50%;
+  transform: rotateZ(-55deg) translate(-35%, 10%);
+  color: unset;
+  background-color: rgb(255, 253, 255);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  overflow: hidden;
+  border: 4px solid rgb(216, 216, 218);
+}
+body .card-special .inner-card .big-elipse .box {
+  background-color: var(--bg-clr);
+}
+body .card-special .inner-card .big-elipse .effect {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+body .card-special .inner-card .small-elipse-1 {
+  width: 40%;
+  aspect-ratio: 1.9;
+  border-radius: 50%;
+  transform: rotateZ(-55deg) translate(-35%, 10%);
+  color: unset;
+  background-color: rgb(216, 216, 218);
+  position: absolute;
+  top: 2%;
+  left: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  overflow: hidden;
+  border: 4px solid rgb(216, 216, 218);
+}
+body .card-special .inner-card .small-elipse-1 .box {
+  background-color: var(--bg-clr);
+}
+body .card-special .inner-card .small-elipse-2 {
+  width: 40%;
+  aspect-ratio: 1.9;
+  border-radius: 50%;
+  transform: rotateZ(-55deg) translate(-35%, 10%);
+  color: unset;
+  background-color: rgb(216, 216, 218);
+  position: absolute;
+  bottom: 15%;
+  right: -5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  overflow: hidden;
+  border: 4px solid rgb(216, 216, 218);
+}
+body .card-special .inner-card .small-elipse-2 .box {
+  background-color: var(--bg-clr);
+}
+body .card-draw4 {
+  width: 5.5cm;
+  height: 8.6cm;
+  color: unset;
+  background-color: rgb(255, 253, 255);
+  padding: 0.6rem;
+  border-radius: 1rem;
+}
+body .card-draw4 .inner-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.4rem;
+  background-color: rgb(21, 18, 25);
+  overflow: hidden;
+  position: relative;
+}
+body .card-draw4 .inner-card .small-card {
+  width: 40px;
+  aspect-ratio: 9/16;
+  background-color: var(--clr);
+  border-radius: 0.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(var(--x), var(--y));
+  z-index: var(--z);
+  box-shadow: 0 0 0px 2px black, 0 2px 0px 2px black, -8px 5px 0px 2px black;
+}
+body .card-draw4 .inner-card .small-card::before {
+  content: "";
+  height: 100%;
+  width: 20%;
+  background-color: black;
+  position: absolute;
+  transform: translate(-100%, 0) skewy(-45deg);
+  transform-origin: bottom right;
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+body .card-draw4 .inner-card .small-card::after {
+  content: "";
+  height: 10%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  transform: translate(0%, 100%) skewx(-45deg);
+  transform-origin: top left;
+  border-bottom-right-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+body .card-draw4 .inner-card .big-elipse {
+  width: 145%;
+  aspect-ratio: 1.9;
+  border-radius: 50%;
+  transform: rotateZ(-55deg) translate(-35%, 10%);
+  color: unset;
+  background-color: rgb(216, 216, 218);
+}
+body .card-draw4 .inner-card .draw4 {
+  color: rgb(216, 216, 218);
+  background-color: unset;
+  font-family: Arial;
+  font-size: 2.8rem;
+  font-weight: 900;
+  position: absolute;
+  top: var(--top);
+  left: var(--left);
+  bottom: var(--bottom);
+  right: var(--right);
+  transform: rotateZ(var(--rot));
+  padding-inline-start: 0.6rem;
+  text-shadow: 3px 3px 1px rgb(21, 18, 25), -3px 3px 1px rgb(21, 18, 25), -3px -3px 1px rgb(21, 18, 25), 3px -3px 1px rgb(21, 18, 25), -3px 0px 1px rgb(21, 18, 25), -3px 0px 2px rgb(21, 18, 25), -3px 0px 3px rgb(21, 18, 25), -3px 0px 4px rgb(21, 18, 25), -3px 0px 5px rgb(21, 18, 25), 4px 4px 1px rgb(216, 216, 218), -4px 4px 1px rgb(216, 216, 218), -4px -4px 1px rgb(216, 216, 218), 4px -4px 1px rgb(216, 216, 218), -4px 0px 1px rgb(216, 216, 218), -4px 0px 2px rgb(216, 216, 218), -4px 0px 4px rgb(216, 216, 218), -4px 0px 4px rgb(216, 216, 218), -4px 0px 5px rgb(216, 216, 218);
+}
+body .card-draw2 {
+  width: 5.5cm;
+  height: 8.6cm;
+  color: unset;
+  background-color: rgb(255, 253, 255);
+  padding: 0.6rem;
+  border-radius: 1rem;
+}
+body .card-draw2 .inner-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.4rem;
+  background-color: rgb(18, 84, 171);
+  overflow: hidden;
+  position: relative;
+}
+body .card-draw2 .inner-card .small-card {
+  width: 40px;
+  aspect-ratio: 9/16;
+  background-color: var(--clr);
+  border-radius: 0.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(var(--x), var(--y));
+  z-index: var(--z);
+  box-shadow: 0 0 0px 2px black, 0 2px 0px 2px black, -8px 5px 0px 2px black;
+}
+body .card-draw2 .inner-card .small-card::before {
+  content: "";
+  height: 100%;
+  width: 20%;
+  background-color: black;
+  position: absolute;
+  transform: translate(-100%, 0) skewy(-45deg);
+  transform-origin: bottom right;
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+body .card-draw2 .inner-card .small-card::after {
+  content: "";
+  height: 10%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  transform: translate(0%, 100%) skewx(-45deg);
+  transform-origin: top left;
+  border-bottom-right-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+body .card-draw2 .inner-card .big-elipse {
+  width: 145%;
+  aspect-ratio: 1.9;
+  border-radius: 50%;
+  transform: rotateZ(-55deg) translate(-35%, 10%);
+  color: unset;
+  background-color: rgb(216, 216, 218);
+}
+body .card-draw2 .inner-card .draw4 {
+  color: rgb(216, 216, 218);
+  background-color: unset;
+  font-family: Arial;
+  font-size: 2.8rem;
+  font-weight: 900;
+  position: absolute;
+  top: var(--top);
+  left: var(--left);
+  bottom: var(--bottom);
+  right: var(--right);
+  transform: rotateZ(var(--rot));
+  padding-inline-start: 0.6rem;
+  text-shadow: 3px 3px 1px rgb(21, 18, 25), -3px 3px 1px rgb(21, 18, 25), -3px -3px 1px rgb(21, 18, 25), 3px -3px 1px rgb(21, 18, 25), -3px 0px 1px rgb(21, 18, 25), -3px 0px 2px rgb(21, 18, 25), -3px 0px 3px rgb(21, 18, 25), -3px 0px 4px rgb(21, 18, 25), -3px 0px 5px rgb(21, 18, 25), 4px 4px 1px rgb(216, 216, 218), -4px 4px 1px rgb(216, 216, 218), -4px -4px 1px rgb(216, 216, 218), 4px -4px 1px rgb(216, 216, 218), -4px 0px 1px rgb(216, 216, 218), -4px 0px 2px rgb(216, 216, 218), -4px 0px 4px rgb(216, 216, 218), -4px 0px 4px rgb(216, 216, 218), -4px 0px 5px rgb(216, 216, 218);
+}
+body .hero-card {
+  width: 5.5cm;
+  height: 8.6cm;
+  color: unset;
+  background-color: rgb(255, 253, 255);
+  padding: 0.6rem;
+  border-radius: 1rem;
+}
+body .hero-card .inner-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.4rem;
+  background-color: rgb(18, 84, 171);
+  overflow: hidden;
+  position: relative;
+}
+body .hero-card .inner-card .hero {
+  position: absolute;
+  transform: translate(var(--x), var(--y)) scale(var(--scl));
+}
+body .hero-card .inner-card .big-elipse {
+  width: 145%;
+  aspect-ratio: 1.9;
+  border-radius: 50%;
+  transform: rotateZ(-55deg) translate(-35%, 10%);
+  color: unset;
+  background-color: rgb(216, 216, 218);
+  color: var(--clr);
+  background-color: var(--bg-clr);
+  background-image: var(--grd);
+  transform: rotateZ(0deg) translate(-15%, 122%);
+  display: grid;
+  grid-template-rows: 2rem 1fr;
+  place-items: center;
+  overflow: hidden;
+}
+body .hero-card .inner-card .big-elipse .name {
+  font-family: "Delicious Handrawn";
+  font-size: 1.4rem;
+  font-weight: 900;
+  font-variant: small-caps;
+}
+body .hero-card .inner-card .big-elipse .effect {
+  padding-inline: 1.9rem;
+  line-height: var(--line-height);
+  text-align: center;
+  align-self: self-start;
+  padding-inline: 3rem;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}/*# sourceMappingURL=style.min.css.map */

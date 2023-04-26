@@ -1,0 +1,54 @@
+
+
+@mixin width ( $wd, $hgt ) {
+    width : $wd ;
+    height : $hgt ;
+}
+
+@mixin font ( $ff , $fs , $fw ) {
+    font : {
+        family : $ff ;
+        size : $fs;
+        weight : $fw ;
+    }
+}
+
+@mixin color ( $clr , $bg-clr ) {
+    color : $clr ;
+    background-color : $bg-clr ;
+}
+
+@mixin border ( $bw , $bs , $bc , $br ) {
+    border : $bw $bs $bc ;
+    border-radius : $br ;
+}
+
+@mixin grid {
+    display: grid ;
+    grid-template-columns: repeat(100,auto);
+    grid-template-areas: 
+    "container fonts ."
+    ;
+}
+@mixin grid-item ( $area ) {
+    grid-area: $area;
+}
+@mixin card {
+    @include width (5.5cm , 8.6cm) ;
+    @include color (unset , $clr-9) ;
+    padding: $pd-1 ;
+    border-radius: $br-1;
+}
+@mixin inner-card ($clr) {
+    width: 100%;
+    height: 100%;
+    border-radius: $br-2 ;
+    background-color: $clr;
+}
+@mixin elipse ($wdt,$clr) {
+    width : $wdt ;
+    aspect-ratio: 1.9;
+    border-radius: 50%;
+    transform: rotateZ(-55deg) translate(-35%,10%); 
+    @include color (unset, $clr) ;
+}
